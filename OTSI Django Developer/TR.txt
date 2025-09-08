@@ -1,0 +1,121 @@
+1. self intro
+A:
+
+2. what is python?
+A:
+    1. high level ,interpreted programming language.
+    2. it is general purpose programming language ,easy to learn syntax 
+    3. its high level data strcture  -> dynamic typing and dynamic biniding.
+
+3.Expalin the decision controll statements in python?
+A:
+    1. if
+    2. elif
+    3. else
+
+4.what are the 4 pillars of oops?
+A:
+    1. abstraction
+    2. polymorpshim
+    3. inhertance
+    4. encapsulation
+
+5.what is the inheritance?
+A:
+    to aquire propertice from one class to another class
+    in python 5 types of inheritances are their 
+
+6.what is file handling python?
+ A:
+    File handling in Python refers to the process of creating, reading, writing, and closing files stored on a disk.
+
+
+7.what are the operation we performed in file handling?
+A:
+    1. read 
+    2. write
+    3. append
+    4. create
+
+8.how do you read  the file ?
+A:
+    with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+
+9.what is the Django?
+A:
+    Django is a high-level Python web framework used to build secure, scalable, and maintainable web applications quickly.
+
+10.Expalin the Django  Architecture?
+A:
+    M - Model   -Defines the structure of your data like tables,fields.
+    V- View     - Contains the business logic.
+    T template  - HTML files with embedded Django Template Language (DTL) to dynamically display data.
+ 
+11.Do you Know python modules?
+A:
+    1. numpy 
+    2. pandas
+    3. matplotlib
+    4. seaborn
+
+12.what is pandas?
+A:
+    Pandas is a powerful Python library used for data analysis, data manipulation, and data cleaning.
+
+
+13.What are the datastructures are used in pandas?
+A:
+    1. series
+    2. DataFrame
+
+14.what is series in padas?
+A:
+    Series is a one-dimensional labeled array that can hold data of any type like integers, floats, strings, Python objects, etc.
+
+15.how to create series?
+A:
+        data = pd.Series([10,20,30,40])
+        print(data)
+
+16.what is dataFrame in pandas?
+A:
+    A DataFrame in Pandas is a two-dimensional, tabular data structure like a spreadsheet or a SQL table — with rows and columns.
+
+17.create a DataFrame?
+A:
+    data={
+        'name' : ["Siva", "ram", "sai"],
+        'age' : [20,52,41]
+    }
+
+    df =  pd.DataFrame(data)
+    print(df)
+
+
+18.how do you create a empty dataframe?
+A:
+    df= pd.DataFrame()
+
+
+ 
+19.what is file handling in python?
+A:
+    File handling in Python is the process of working with files
+    such as creating, opening, reading, writing, and closing files—using built-in functions like open(), read(), write(), and close().
+     It allows you to store and retrieve data from files on disk.
+
+
+20.how do you perfrom read operation?
+A:
+    with open("file_name", r) as fp :
+        content = fp.read()
+
+
+
+21. what is django?
+A:
+    Django is a high-level, open-source Python web framework that enables rapid development of secure and maintainable websites. 
+    It follows the Model-View-Template (MVT) architectural pattern and provides built-in features for handling authentication, database operations, URL routing, and more.

@@ -1,0 +1,150 @@
+1. Self Intro 
+A: 
+
+2. what are the projctes are done?
+A:
+     I. DeepQuest: A Deep Learning Approach to Contextually Relevant Question Generation
+     II. Agricultural Crop Recommendation System.
+
+3.expalin projcet of DeepQuest ?
+A:
+    I. DeepQuest: A Deep Learning Approach to Contextually Relevant Question Generation:
+
+        1.The main theme of this project is to automatically generate question papers based on input provided by the user.
+
+        2.The input can be gathered from textbooks, study materials, and other educational resources.
+
+        3.This project utilizes NLTK (Natural Language Toolkit) along with  nlp algorithm.
+
+        4.The algorithm used is a traditional rule-based approach.
+
+        5.Flask is used as the framework for the user interface, allowing users to interact easily with the system.
+
+        6.The output is generated in PDF format.
+
+4.what are the tools and modules are you used in your project?
+A:
+        Tools/Modules:
+
+        	1.NLTK
+        	2.Flask (Optional: Django)
+        	3.PDF Generation
+        	4.VS Code
+
+
+5.which algorithm you are used in your  project?
+A:
+      traditional rule-based approach
+
+
+6.what are the alternative algorithms for your project?
+A:
+    1. Reinforcement Learning
+    2. Seq2Seq
+
+7.why you choose this rule based algorithm for your project?
+A:
+    We chose a rule-based algorithm because it was simple, didn’t require large training data, and gave us full control over question formats. 
+    It worked well for generating factual and structured academic questions using predefined patterns. 
+    It was also easier to integrate with NLTK for text processing.
+
+
+
+8.how much accurate your model?
+A:
+    80- 90 percentage accurate based on manual evaluation.
+
+
+
+
+9.what is the working flow of your project?
+A:
+    1. It takes the input from user.
+    2. the input para divided into sentance and sectances into words
+    3. this process is called tokenization
+    4. apply rule based algorithm to check the grammer and correct formation 
+    5. the out put would be in pdf formate 
+    6. Flask is used for user interface.
+
+
+10.what is tokenization?
+A:
+    Tokenization is the process of breaking down text into smaller pieces called tokens.
+
+    ex: "I Love AI"     -> ["I","Love", "AI"]
+
+
+11.write a code for tokenization, take one text?
+A:
+    from nltk.tokenization  import word_tokenization, sentance_tokenization
+
+    txt="I Love Python"
+
+    print(word_tokenization(txt))    # for word tokens
+    print(sentance_tokenization(txt))  # for sentance tokens
+
+
+
+12.can you expalin the Agricultural crop recommandation system?
+A:
+    Agricultural Crop Recommendation System:
+
+        1.This project aims to recommend the best crop based on factors such as soil properties, rainfall, and humidity.
+
+        2.We use a machine learning algorithm, specifically a decision tree, to make crop recommendations.
+
+        3.The Flask framework is used to create the user interface.
+
+        4.Additionally, the system recommends the best fertilizers for higher yield.
+
+
+
+13. which alogorithm you are used ?
+A:
+     A decision tree algorithm 
+
+14.why dessicion tree?
+A:
+    We chose the Decision Tree algorithm because:
+
+       1. It’s easy to interpret and visualize the decision-making process.
+
+       2. It handles both categorical and numerical data like soil type, pH, rainfall, etc.
+
+       3.It works well with non-linear relationships between features.
+
+       4. It requires less data preprocessing compared to other models.
+
+
+
+15.what are the alternative algorithms for your project
+A:
+    1.Random Forest
+    2.Support Vector Machine (SVM)
+
+
+16.4.what are the tools and modules are you used in your project?
+A:
+    tools/ modules:
+    
+    1.Python
+    2.Flask
+    3.pandas,numpy
+    4.pickel
+    5.scikit-learnin
+    6.vs code
+   
+
+.7.why you choose this rule based algorithm for your project?
+A:
+    I chose the Decision Tree (a rule-based algorithm) because 
+    it is easy to understand, handles both numerical and categorical data well, doesn’t require feature scaling, 
+    and works effectively for predicting outcomes based on clear decision rules, which fits the agricultural domain.
+
+
+
+
+
+.what is pickel file ?
+A:
+    Pickle is used to save the trained machine learning model into a file (.pkl) so it can be loaded later in the Flask app to make predictions without retraining the model every time.

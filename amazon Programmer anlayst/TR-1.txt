@@ -1,0 +1,209 @@
+1.what is Recursion?
+
+A: 
+    Recursion is a programming technique where a function calls itself to solve a smaller instance of a problem. 
+    It continues doing this until it reaches a base case—a condition where the function stops calling itself.
+
+
+2. what are the real example of recuesion?
+A:
+    1. factorial
+    2. febinoci
+
+write  a program for factorial?
+A:
+        def factorial(num):
+            if num==1:
+                return 1
+            return num* factorial(num-1)
+
+        n= 5
+        print(factorial(n))
+
+
+
+
+
+3.write structural diagram from Recursion  "10"?
+A:
+       -> fact(10)
+           -> fact(9)
+            ->fact(8)
+            .
+             .
+              .
+                -> fact(0)
+
+
+4. what are pro's and con's of Recursion?
+A:
+    pro's:
+
+    1. less code 
+    2. easy to uderstand
+    3. Reduce code complexity.
+
+    con's:
+
+    1. takes more memory
+    2. solwer excution 
+    3. hard to dubug
+
+
+5.which memory utlized in Recursion?
+A:
+     1. stack memory
+
+
+
+6.how to  handle memory the satck overflow in recurston?
+A: 
+    by using Memoization . It Avoids repeated calls
+
+
+
+
+# oops
+
+7. what is  polymorphism?
+A:
+    polymorphism means manyforms. it means the same function name (but different signatures) being used for different types.
+
+
+
+8 and 9.what is method overloading and overriding?
+A:
+    Method Overloading:
+
+    Method Overloading means defining multiple methods with the same name but different parameters in the same class.
+
+    but in Python does not support method overloading directly like Java or C++.
+
+
+    Method Overriding:
+
+    Method Overriding happens when a child (subclass) provides a new implementation for a method that is already defined in its parent class.
+
+
+
+
+
+10.give me a example for polymorphism?
+A:
+
+    1. prime minister
+    2. lecturer
+    
+
+11. give me a real time exsmple  useage in computer polymorphism example?
+A:
+    1. Shapes   -> circle, square, traingle
+
+
+
+# Operating System(OS)
+
+12. what is mutlithreading?
+A:
+    Multithreading is the process of running multiple threads concurrently within a single process, where all threads share the same memory space. 
+    It allows a program to perform multiple tasks at the same time
+
+
+13. example of mutlithreading?
+A:
+     1.word
+     2. IDE'
+     
+
+# DBMS
+
+14. what is the primary key ?
+A:
+    A primary key is a column (or a combination of columns) in a database table and it's uniquekly identifies.
+
+    constrains:
+
+    1.Uniquely identifies
+    2. not null
+    3. one per table
+
+15. what is differance but primary key and unique key?
+A:
+    1.the main differance is primary key can not contains null values but unique key can allow one null value.
+    2. A table can only have one primary key. in unique key A table can have multiple unique keys.
+
+
+
+16. i have two tables of emp and dept how join this two?
+A:
+    by using of forgin key.
+
+
+17. how do you identifes the keys cloumns and join?
+A:
+    employeTable : empid,salary,name,dptid
+    departmentTable: dptid,name,empCount
+
+
+
+
+
+# coding 
+
+
+
+Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+
+Input: nums = [100,4,200,1,3,2]
+
+output: 4
+
+
+
+18. write approch for this problem?
+A:
+    1. sort the list and then converting into set 
+    2. the traversing through that set and maintain two states
+    3. one previous _longest and current_longest
+    4. check the previous number is equals to number -1 
+    5. if it is equals then current_longest increment to 1
+    6. is not quals then update the previous_longest
+
+
+
+
+19.write a program for that question?
+
+A:
+    def longestConsecutive(nums):
+        
+        if not nums:
+            return 0
+
+        nums=sorted(set(nums))
+
+        previous_longest =1
+        current_longest =1
+
+
+        for i in range(1, len(nums)):
+            if nums[i] ==nums[i-1]+1:
+                current_longest+=1
+
+            else:
+                previous_longest= max(previous_longest, current_longest)
+
+                current_longest =1 
+
+        return max(previous_longest, current_longest)
+    
+
+    nums=nums = [100,4,200,1,3,2]
+
+    print(longestConsecutive(nums))
+
+
+
+20. explain the code with bulid run?
+A: 
+    same as algorithm

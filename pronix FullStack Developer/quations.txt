@@ -1,0 +1,21 @@
+1.Palindrome            -  completed
+2.Pascal triangle       -
+3.Fibonacci             -  completed
+4.Diamond shape pattern -  completed
+5.N rotations           -   
+6.Oops                   -
+7.  1
+   1 2
+  1 2 3
+   1 2
+    1
+8.Anagram                   - completed
+9.List repeated words       - completed
+10. Second largest number   -  completed
+Choice: sorting techniques  -  
+
+
+          1
+        1   1
+      1   2   1
+    1  2  3 2  1
